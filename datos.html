@@ -1,0 +1,56 @@
+<html>
+<head>
+	<title>Arreglo</title>
+	<header>
+		<h1>--------- Mostrar Datos --------</h1>
+		<script>
+
+	  
+	function agregar()
+	{
+		
+		var nNuevo = document.getElementById("Nombre").value
+	        var vNuevo = document.getElementById("valor").value
+
+		var agregar = {nombre : nNuevo, valor : vNuevo};
+		tabla.push(agregar);
+	}
+
+	function mostrar()
+	{
+		var nombre = document.getElementById("nombre").value;
+		var valor = document.getElementById("valor").value;
+
+		document.getElementById("resultado").innerHTML=
+		"  "+nombre+ " &nbsp;  =  &nbsp; "+valor;
+		}
+
+
+		</script>
+		<from onsubmit = "return false">
+			<label for="name">Nombre : </label>
+		    <input type = "text" name= "Nombre" value = " "  size = 20 id ="nombre"><br><br>
+		    <label for ="name">  Valor : </label>
+		    <input type = "text" name= "Valor" value = " " size = 20 id = "valor"><br>
+		    <br>
+		    <input type = "button" id = "nombre" value = "Agregar" onclick="guardar()">
+		    <input type = "button"  id="valor" value = "Mostrar" onclick="mostrar()">
+		    
+		    <br><br>
+	<h1>---------- Datos --------</h1>
+	<div id="resultado"></div>
+
+        <h1>____________________</h1>
+		</from>
+	</header>
+
+		<br>Elaborado:Marling Gutierrez<br>
+		<br>Profesor: Enmanuel Jarquin<br>
+		<br>Clase : Progrmacion Grafica<br>
+		
+		
+</head>
+<body>
+
+</body>
+</html>
